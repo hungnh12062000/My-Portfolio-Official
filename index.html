@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Frontend Developer</title>
+
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <h1 class="brand">H</h1>
+      <ul class="links-container">
+        <li class="links-item"><a href="#" class="link active">Home</a></li>
+        <li class="links-item">
+          <a href="#project-section" class="link">Project</a>
+        </li>
+        <li class="links-item">
+          <a href="#about-section" class="link">About</a>
+        </li>
+        <li class="links-item">
+          <a href="#contact-section" class="link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- home section -->
+    <section class="home">
+      <div class="hero-content">
+        <h1 class="hero-heading">
+          <span class="highlight">Hi, </span>i am Hung
+        </h1>
+        <p class="profession">Web developer</p>
+        <p class="infor">
+          I am studying in final-year student at University of Information
+          Technology VNU-HCM.
+        </p>
+        <a href="#contact-section" class="btn">Contact</a>
+      </div>
+
+      <img src="./assets/img/my_pic.png" alt="" class="image" />
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about-section">
+      <h2 class="heading">About <span class="highlight">me</span></h2>
+      <p class="sub-heading">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <div class="seperator"></div>
+
+      <div class="about-me-container">
+        <div class="left-col">
+          <img src="./assets/img/me_1.jpg" alt="" class="about-image" />
+        </div>
+        <div class="right-col">
+          <p class="about-para">
+            I have aimed to become a full-stack developer. At the moment, I am
+            now working as a front-end developer to step one step closer to my
+            goal. And I'm still looking for more opportunities, more challenges
+            to build up working experiences and honing my both soft and
+            technical skills.
+          </p>
+          <p class="about-para">
+            OBJECTIVE <br />
+            - Have the opportunity to improve technical and soft skills in
+            practice. <br />
+            - Oriented in increasing Javascript Front-end skill to become an
+            expert in ReactJS Technology.
+          </p>
+          <a href="#" class="btn">Download cv</a>
+        </div>
+      </div>
+
+      <h2 class="heading">Language and Framework i know</h2>
+      <div class="seperator"></div>
+      <div class="skill-container">
+        <div class="skill-card" style="--bg: #f06529">
+          <p class="skill">HTML5</p>
+        </div>
+        <div class="skill-card" style="--bg: #379ad6">
+          <p class="skill">CSS3</p>
+        </div>
+        <div class="skill-card large" style="--bg: #cc6699">
+          <p class="skill">SASS/SCSS</p>
+        </div>
+        <div class="skill-card large" style="--bg: #f7d91e">
+          <p class="skill">JS/ES6</p>
+        </div>
+        <div class="skill-card large" style="--bg: #5ed9fb">
+          <p class="skill">ReactJS</p>
+        </div>
+        <div class="skill-card" style="--bg: #001e36">
+          <p class="skill">Photoshop</p>
+        </div>
+        <div class="skill-card large" style="--bg: #0acf83">
+          <p class="skill">Figma</p>
+        </div>
+        <div class="skill-card" style="--bg: #5ed9fb">
+          <p class="skill">More</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- project section -->
+    <section class="project" id="project-section">
+      <h2 class="heading">Project<span class="highlight">s</span></h2>
+      <p class="sub-heading">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <div class="seperator"></div>
+
+      <div class="filters">
+        <button class="filter-btn active" id="all">All</button>
+        <button class="filter-btn" id="Web-application">Web Application</button>
+        <button class="filter-btn" id="Figma">figma</button>
+        <button class="filter-btn" id="Mobile-app">Mobile app</button>
+        <button class="filter-btn" id="E-commerce">E-commerce</button>
+      </div>
+
+      <div class="project-container">
+        <!-- <div class="project-card">
+                <img src="./img/travel-application.png" alt="">
+                <div class="project-content">
+                     <div class="project-name">Travel</div>
+                     <span class="tags">#HTML #CSS</span>
+                </div>
+           </div> -->
+      </div>
+    </section>
+
+    <footer class="footer">Portfolio of Hai Hung Nguyen</footer>
+
+    <script src="./assets/js/project.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
