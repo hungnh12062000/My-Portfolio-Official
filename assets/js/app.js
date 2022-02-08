@@ -17,14 +17,16 @@ const projectContainer = document.querySelector(".project-container");
 
 projects.forEach((project) => {
   projectContainer.innerHTML += `
-    <div class="project-card" data-tags="#all, ${project.tags}">
+  <div class="project-card" data-tags="#all, ${project.tags}">
+    <a href="${project.linkProject}" target="_blank">
       <img src="./assets/img/${project.image}" alt="">
       <div class="project-content">
         <div class="project-name">${project.name}</div>
         <span class="tags">${project.tags}</span>
       </div>
-    </div>
-  `;
+    </a>
+  </div>
+      `;
 });
 
 //filter
@@ -48,10 +50,10 @@ filters.forEach((filterBtn) => {
 });
 
 //responsive toggle button
-const toggleBtn = document.querySelector('.toggle-btn');
-const linkContainer = document.querySelector('.links-container');
+const toggleBtn = document.querySelector(".toggle-btn");
+const linkContainer = document.querySelector(".links-container");
 
-toggleBtn.addEventListener('click', ()=>{
-  toggleBtn.classList.toggle('active');
-  linkContainer.classList.toggle('show');
-})
+toggleBtn.addEventListener("click", () => {
+  toggleBtn.classList.toggle("active");
+  linkContainer.classList.toggle("show");
+});
